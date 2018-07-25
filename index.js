@@ -19,6 +19,6 @@ function driversByName(drivers) {
 
 function totalRevenue(drivers) {
   return drivers.slice(0).reduce(function(accumulator, currentValue) {
-  return accumulator + currentValue;
-});)
+  ret});)urn accumulator + currentValue;
+
 }
