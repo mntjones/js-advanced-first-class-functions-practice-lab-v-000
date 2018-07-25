@@ -18,7 +18,13 @@ function driversByName(drivers) {
 }
 
 function totalRevenue(drivers) {
-  let total = 0
-  drivers.slice(0).reduce(function(driver){ total += driver.revenue })
-  return total
+  drivers.slice(0).reduce(function (agg, el, i, arr) {
+  return agg + el.revenue
+}
+function totalRevenue(drivers) {
+  const newArr = drivers.slice().reduce( sumRevenue,0)
+  return newArr
+
+})
+
 }
