@@ -20,11 +20,5 @@ function driversByName(drivers) {
 function totalRevenue(drivers) {
   drivers.slice(0).reduce(function (agg, el, i, arr) {
   return agg + el.revenue
-}
-function totalRevenue(drivers) {
-  const newArr = drivers.slice().reduce( sumRevenue,0)
-  return newArr
-
-})
-
+  }, 0)
 }
